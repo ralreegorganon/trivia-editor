@@ -1,0 +1,12 @@
+<ul>
+  {{#each}}
+    <li>
+      {{#link-to 'trivium' this}}
+        {{question}},
+        {{answer}}
+      {{/link-to}}
+    </li>
+  {{else}}
+    <li>No trivia found.</li>
+  {{/each}}
+</ul>

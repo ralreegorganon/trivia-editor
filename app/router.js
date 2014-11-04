@@ -6,6 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+    this.resource('trivia', function() {
+        this.resource('trivium', { path: '/:trivium_id' });
+    });
 });
 
 export default Router;
